@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost/sell?characterEncoding=utf-8&useSSL=false
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.1.110
+    port: 6379
+server:
+  context-path: /sell
+wechat:
+  mpAppId: wx2c3114b9f1d185ca
+  mpAppSecret: 28a36a1de1ff83f7f3c86aef4f5c5364
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://soto.natapp1.cc/sell/pay/notify
+  openAppId: xxx
+  oppenAppSecret: xxx
+  templateId:
+    orderStatus: y6QqfIHxoIbZdY8U-4gl4z9LRaAGUtJLy4sGfKZ3pGY
+
+
+projectUrl:
+  wechatMpAuthorize: http://soto.natapp1.cc
+  wechatOpenAuthorize: http://soto.natapp1.cc
+  sell: http://soto.natapp1.cc
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#  mpAppId: wxd898fcb01713c658
+#  mpAppSecret: 47ccc303338cee6e62894fxxxxxxxxxxx
+#  mchId: 1483469312
+#  mchKey: 06C56A89949D617xxxxxxxxxxx
+#  keyPath: /var/weixin_cert/h5.p12
+#  notifyUrl: http://sell.natapp4.cc/sell/pay/notify

@@ -14,5 +14,24 @@
 * application.yml
 * logback-spring.xml
 
+**关于日志级别 **
+
+* logback-spring.xml中日志过滤 
+
+## 买家端
+
+### DAO层设计与开发
+
+* 产品类目   ProductCategory.java
 
 
+
+
+
+
+
+
+
+### Service层设计与开发
+
+### Controller层设计与开发
